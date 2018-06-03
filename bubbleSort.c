@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void bubble_sort(int length, int *data);
+void bubbleSort(int length, int *data);
 
 int main(void) {
 	int data[] = { 4, 51, 31, 8, 20, 16, 37, 34, 3, 11, 7, 13, 21, 27, 1 };
@@ -9,9 +9,9 @@ int main(void) {
 		printf("%d ", data[k]);
 	}
 	printf("\n");
-	bubble_sort(length, data);
+	bubbleSort(length, data);
 }
-void bubble_sort(int length, int *data) {
+void bubbleSort(int length, int *data) {
 	int tmp;
 	for (int i = 0; i < length - 1; i++) {
 		for (int j = 0; j < length - 1 - i; j++) {

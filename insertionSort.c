@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void insertion_sort(int length, int *data);
+void insertionSort(int length, int *data);
 void printArray(int length, int *data);
 
 int main(void) {
 	int data[] = { 4, 51, 31, 8, 20, 16, 37, 34, 3, 11, 7, 13, 21, 27, 1 };
 	int length = sizeof(data) / sizeof(data[0]);
 	printArray(length, data);
-	insertion_sort(length, data);
+	insertionSort(length, data);
 }
-void insertion_sort(int length, int *data) {
+void insertionSort(int length, int *data) {
 	int j;
 	int tmp;
 	for (int i = 1; i < length; i++) {
